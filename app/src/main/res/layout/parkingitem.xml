@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:elevation="8dp"
+    android:background="@drawable/category"
+    android:backgroundTint="@color/white"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal"
+android:layout_margin="20dp"
+    android:layout_marginRight="20dp"
+>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            app:cardElevation="16dp">
+
+            <TextView
+
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:textColor="@color/dark_blue"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="" />
+
+        <TextView
+android:visibility="gone"
+            android:textColor="@color/dark_blue"
+            android:id="@+id/address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Address" />
+
+
+        <TextView
+android:layout_marginBottom="15dp"
+            android:textColor="@color/dark_blue"
+            android:id="@+id/price"
+            android:textSize="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Price:" />
+    </LinearLayout>
+
+</LinearLayout>

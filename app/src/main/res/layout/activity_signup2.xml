@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Signup2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circleshape"
+                android:backgroundTint="@color/pink" />
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circleshape"
+                android:backgroundTint="@color/pink" />
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circleshape"
+                android:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal info"
+                android:textColor="@color/white" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="Car info"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:text="Finish"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/defaultround"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_marginTop="50dp"
+                android:id="@+id/prg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/ocr"
+                android:visibility="gone"
+                android:layout_marginTop="80dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/carnum"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundborder"
+                    android:text="Car Number"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ww" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/button1"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scan car plate" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/dropdown"
+                    android:dropDownWidth="300dp"
+                    android:paddingLeft="50dp"
+                    android:popupBackground="@android:color/white"
+                    android:popupElevation="3dp"
+                    android:spinnerMode="dropdown"
+                    android:stateListAnimator="@drawable/spinner"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/dropdown"
+                    android:dropDownWidth="300dp"
+                    android:paddingLeft="50dp"
+                    android:popupBackground="@android:color/white"
+                    android:popupElevation="3dp"
+                    android:spinnerMode="dropdown"
+                    android:stateListAnimator="@drawable/spinner"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/dropdown"
+                    android:dropDownWidth="300dp"
+                    android:paddingLeft="50dp"
+                    android:popupBackground="@android:color/white"
+                    android:popupElevation="3dp"
+                    android:spinnerMode="dropdown"
+                    android:stateListAnimator="@drawable/spinner"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="200dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/roundborder"
+                android:backgroundTint="@color/pink"
+                android:clickable="true"
+                android:onClick="next"
+                android:paddingTop="10dp"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

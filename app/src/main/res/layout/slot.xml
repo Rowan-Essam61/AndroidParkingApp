@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slot"
+    android:layout_width="100dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/roundborder"
+    android:backgroundTint="@color/darkgray"
+android:gravity="center"
+    android:text=""
+    android:textAlignment="center"
+    android:textColor="@color/dark_blue"
+    android:textSize="20dp"
+    tools:ignore="MissingConstraints" />
+

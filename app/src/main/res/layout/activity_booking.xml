@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".BookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Booking"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/defaultround"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="0dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="80dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ww" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/face" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/category"
+                    android:padding="10dp"
+                    android:text="Levels"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="25sp"
+                    />
+               <GridView
+                   android:id="@+id/listt"
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="50dp"
+                   android:columnCount="3"
+                   android:numColumns="3"
+                   android:paddingLeft="10dp"
+                   android:paddingTop="10dp"
+                   android:verticalSpacing="10dp"
+                   android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <GridView
+                android:id="@+id/list"
+                android:verticalSpacing="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:columnCount="3"
+                android:numColumns="3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:rowCount="4"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

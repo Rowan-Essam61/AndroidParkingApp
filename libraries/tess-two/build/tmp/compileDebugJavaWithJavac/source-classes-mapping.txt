@@ -1,0 +1,64 @@
+com/googlecode/leptonica/android/Pix.java
+ com.googlecode.leptonica.android.Pix
+com/googlecode/leptonica/android/Box.java
+ com.googlecode.leptonica.android.Box
+com/googlecode/leptonica/android/Pixa.java
+ com.googlecode.leptonica.android.Pixa
+ com.googlecode.leptonica.android.Pixa$1
+ com.googlecode.leptonica.android.Pixa$PixIterator
+com/googlecode/tesseract/android/TessBaseAPI.java
+ com.googlecode.tesseract.android.TessBaseAPI
+ com.googlecode.tesseract.android.TessBaseAPI$OcrEngineMode
+ com.googlecode.tesseract.android.TessBaseAPI$PageIteratorLevel
+ com.googlecode.tesseract.android.TessBaseAPI$PageIteratorLevel$Level
+ com.googlecode.tesseract.android.TessBaseAPI$PageSegMode
+ com.googlecode.tesseract.android.TessBaseAPI$PageSegMode$Mode
+ com.googlecode.tesseract.android.TessBaseAPI$ProgressNotifier
+ com.googlecode.tesseract.android.TessBaseAPI$ProgressValues
+com/googlecode/leptonica/android/GrayQuant.java
+ com.googlecode.leptonica.android.GrayQuant
+com/googlecode/leptonica/android/Constants.java
+ com.googlecode.leptonica.android.Constants
+ com.googlecode.leptonica.android.Constants$SortBy
+ com.googlecode.leptonica.android.Constants$SortOrder
+ com.googlecode.leptonica.android.Constants$StorageFlag
+com/googlecode/leptonica/android/MorphApp.java
+ com.googlecode.leptonica.android.MorphApp
+ com.googlecode.leptonica.android.MorphApp$TophatType
+com/googlecode/leptonica/android/Rotate.java
+ com.googlecode.leptonica.android.Rotate
+com/googlecode/leptonica/android/Edge.java
+ com.googlecode.leptonica.android.Edge
+ com.googlecode.leptonica.android.Edge$EdgeOrientationFlag
+com/googlecode/leptonica/android/JpegIO.java
+ com.googlecode.leptonica.android.JpegIO
+com/googlecode/leptonica/android/Convert.java
+ com.googlecode.leptonica.android.Convert
+com/googlecode/leptonica/android/Boxa.java
+ com.googlecode.leptonica.android.Boxa
+com/googlecode/leptonica/android/Binarize.java
+ com.googlecode.leptonica.android.Binarize
+com/googlecode/tesseract/android/BuildConfig.java
+ com.googlecode.tesseract.android.BuildConfig
+com/googlecode/tesseract/android/PageIterator.java
+ com.googlecode.tesseract.android.PageIterator
+com/googlecode/leptonica/android/Clip.java
+ com.googlecode.leptonica.android.Clip
+com/googlecode/tesseract/android/TessPdfRenderer.java
+ com.googlecode.tesseract.android.TessPdfRenderer
+com/googlecode/leptonica/android/Enhance.java
+ com.googlecode.leptonica.android.Enhance
+com/googlecode/tesseract/android/ResultIterator.java
+ com.googlecode.tesseract.android.ResultIterator
+com/googlecode/leptonica/android/ReadFile.java
+ com.googlecode.leptonica.android.ReadFile
+com/googlecode/leptonica/android/Skew.java
+ com.googlecode.leptonica.android.Skew
+com/googlecode/leptonica/android/WriteFile.java
+ com.googlecode.leptonica.android.WriteFile
+com/googlecode/leptonica/android/AdaptiveMap.java
+ com.googlecode.leptonica.android.AdaptiveMap
+com/googlecode/leptonica/android/Scale.java
+ com.googlecode.leptonica.android.Scale
+ com.googlecode.leptonica.android.Scale$1
+ com.googlecode.leptonica.android.Scale$ScaleType

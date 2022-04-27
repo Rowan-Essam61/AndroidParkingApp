@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Signup3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circleshape"
+                android:backgroundTint="@color/pink" />
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circleshape"
+                android:backgroundTint="@color/pink" />
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circleshape"
+                android:backgroundTint="@color/pink" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal info"
+                android:textColor="@color/white" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="Car info"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:text="Finish"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/defaultround"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_baseline_person_24"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                tools:ignore="MissingConstraints" />
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/darkgray"
+                android:shrinkColumns="*"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+
+                        android:padding="10dip"
+                        android:text="Name"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+
+                        android:padding="10dip"
+                        android:text="Email"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+
+                        android:padding="10dip"
+                        android:text="Phone"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+
+                        android:padding="10dip"
+                        android:text="Date of birth"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dob"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+
+                        android:padding="10dip"
+                        android:text="Gender"
+                        android:textSize="20sp" />
+
+                    <TextView
+
+                        android:id="@+id/gender"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+
+                        android:padding="10dip"
+                        android:text="Address"
+                        android:textSize="20sp" />
+
+                    <TextView
+
+                        android:id="@+id/address"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+
+                        android:padding="10dip"
+                        android:text="National ID"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/nid"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+            </TableLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/car"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_baseline_directions_car_24"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                tools:ignore="MissingConstraints" />
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/darkgray"
+                android:shrinkColumns="*"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dip"
+                        android:text="Car Number"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/carnum"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dip"
+                        android:text="Category"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/category"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dip"
+                        android:text="Type"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:background="@android:color/white" />
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dip"
+                        android:text="Color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/color"
+                        android:padding="10dip"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/done"
+                android:layout_width="200dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/roundborder"
+                android:backgroundTint="@color/pink"
+                android:clickable="true"
+                android:onClick="gohome"
+                android:paddingTop="10dp"
+                android:text="Done"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:orientation="vertical"
+    tools:context=".SigninActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/defaultround"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/roundborder"
+            android:hint="@string/email"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="25dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundborder"
+                android:hint="@string/password"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+
+                android:textSize="25dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/hidepass" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/showpass" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:onClick="forget"
+            android:text="@string/fpass"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/roundborder"
+            android:backgroundTint="@color/pink"
+            android:clickable="true"
+            android:onClick="home"
+            android:paddingTop="10dp"
+            android:text="SignIn"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:onClick="signup"
+            android:text="@string/haveaccount"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sidebar"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_baseline_menu_24" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_horizontal"
+                android:text="GO N PARK"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/defaultround"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/countdown"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundborder"
+                android:backgroundTint="@color/lightpink"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="counterc"
+                android:text="00:30:50"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="25dp"
+                android:visibility="gone"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <SearchView
+                    android:id="@+id/search"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundborder"
+                    android:gravity="center"
+                    android:queryHint="Search for parkingspaces"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <ListView
+                    android:id="@+id/listt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/category"
+                android:padding="10dp"
+                android:text="Categories"
+                android:textColor="@color/dark_blue"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+
+                            android:id="@+id/publicparking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="20dp"
+                            android:onClick="parseApicategory"
+                            android:orientation="vertical"
+                            android:tag="public">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="0dp"
+                                android:layout_marginRight="50dp"
+                                android:elevation="10dp"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:id="@+id/roundedImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/f" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Public Parking"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+
+                                    tools:ignore="RtlCompat" />
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/mall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="20dp"
+                            android:onClick="parseApicategory"
+                            android:orientation="vertical"
+                            android:tag="mall">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="0dp"
+                                android:elevation="10dp"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/mall" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Malls"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+
+                                    tools:ignore="RtlCompat" />
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/club"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:onClick="parseApicategory"
+                            android:orientation="vertical"
+                            android:tag="club">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="0dp"
+                                android:elevation="10dp"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/images" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Clubs"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+
+                                    tools:ignore="RtlCompat" />
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/list"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10.0sp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:padding="20dp"
+                android:verticalSpacing="10dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
